@@ -1,0 +1,70 @@
+.ring {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--glass-border);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-origin: center;
+}
+
+.label {
+    font-size: 10px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    pointer-events: none;
+}
+
+.dot {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    background-color: var(--accent-glow);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 10000;
+    transform-origin: center;
+}
+
+.trailsContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9998;
+}
+
+.trailDot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    background-color: var(--accent-glow);
+    border-radius: 50%;
+    transform-origin: center;
+}
+
+.ripple {
+    position: fixed;
+    width: 6px;
+    height: 6px;
+    background-color: transparent;
+    border: 2px solid var(--accent-glow);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9997;
+    transform: translate(-50%, -50%);
+}
